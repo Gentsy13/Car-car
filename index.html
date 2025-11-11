@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>3D City Scene</title>
+    <style>
+      body {
+        margin: 0;
+        overflow: hidden;
+        background-color: #000;
+      }
+
+      #btnScaleUp,
+      #btnScaleDown {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        margin-right: 10px;
+        padding: 8px 12px;
+        font-size: 14px;
+        background-color: #1e90ff;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      #btnScaleDown {
+        left: 100px;
+        background-color: #ff6347;
+      }
+
+      #btnScaleUp:hover,
+      #btnScaleDown:hover {
+        opacity: 0.8;
+      }
+    </style>
+  </head>
+  <body>
+    <canvas id="c"></canvas>
+    <button id="btnScaleUp">Scale Up</button>
+    <button id="btnScaleDown">Scale Down</button>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
